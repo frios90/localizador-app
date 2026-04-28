@@ -1,0 +1,45 @@
+name: localizador_app
+description: A new Flutter project.
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # Para ubicación
+  geolocator: ^10.1.0
+
+  # Para HTTP requests
+  http: ^1.1.0
+
+  # Para variables de entorno
+  flutter_dotenv: ^5.1.0
+
+  # Para UUID
+  uuid: ^4.1.0
+
+  # Para almacenamiento local
+  shared_preferences: ^2.2.2
+
+  # Para servicio en background
+  flutter_background_service: ^5.0.5
+  flutter_background_service_android: ^6.0.0
+  flutter_background_service_ios: ^5.0.0
+
+  # Para notificaciones - VERSIÓN ESTABLE (NO 16.x)
+  flutter_local_notifications: ^17.2.1
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+
+flutter:
+  uses-material-design: true
+
+  # Para cargar .env
+  assets:
+    - .env
